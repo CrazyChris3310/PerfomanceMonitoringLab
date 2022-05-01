@@ -19,16 +19,6 @@ public class PointData {
   private String duration;
   private String match;
 
-  private boolean clickedOnGraph;
-
-  public boolean isClickedOnGraph() {
-    return clickedOnGraph;
-  }
-
-  public void setClickedOnGraph(boolean clickedOnGraph) {
-    this.clickedOnGraph = clickedOnGraph;
-  }
-
   public Double getX() {
     return x;
   }
@@ -96,5 +86,12 @@ public class PointData {
     date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss"));
     duration = (System.nanoTime() - start) / 1000 + "мкс";
     return this;
+  }
+
+  @Override
+  public String toString() {
+    return "Hit: " + match +
+           "\nDate: " + date +
+           "\nDuration: " + duration;
   }
 }
