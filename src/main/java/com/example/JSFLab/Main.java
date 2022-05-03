@@ -1,9 +1,7 @@
 package com.example.JSFLab;
 
 import com.example.JSFLab.mbeans.Counter;
-import com.example.JSFLab.mbeans.CounterMBean;
 import com.example.JSFLab.mbeans.Square;
-import com.example.JSFLab.mbeans.SquareMBean;
 
 import javax.management.InstanceAlreadyExistsException;
 import javax.management.MBeanRegistrationException;
@@ -11,11 +9,7 @@ import javax.management.MBeanServer;
 import javax.management.MalformedObjectNameException;
 import javax.management.NotCompliantMBeanException;
 import javax.management.ObjectName;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.lang.management.ManagementFactory;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
